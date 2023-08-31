@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientação-A-Objetos-C-Sharp", "Orientação-A-Objetos-C-Sharp\Orientação-A-Objetos-C-Sharp.csproj", "{151AE201-5DEC-4BDE-A19E-D0D03A38F553}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{151AE201-5DEC-4BDE-A19E-D0D03A38F553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{151AE201-5DEC-4BDE-A19E-D0D03A38F553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{151AE201-5DEC-4BDE-A19E-D0D03A38F553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{151AE201-5DEC-4BDE-A19E-D0D03A38F553}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B149A85D-0577-4DA5-A66C-E47C49CBBF38}
+	EndGlobalSection
+EndGlobal
