@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientação-A-Objetos-C-Sharp", "Orientação-A-Objetos-C-Sharp\Orientação-A-Objetos-C-Sharp.csproj", "{151AE201-5DEC-4BDE-A19E-D0D03A38F553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Screen Sound 2", "Orientação-A-Objetos-C-Sharp\Screen Sound 2.csproj", "{151AE201-5DEC-4BDE-A19E-D0D03A38F553}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

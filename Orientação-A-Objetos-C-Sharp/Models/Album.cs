@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ScreenSound.Interfaces;
 
-class Album
+namespace ScreenSound.Models;
+
+internal class Album : IAvaliavel
 {
     public string Artista { get; set; }
     public string Name { get; set; }
     public List<Musica> Musicas { get;}
+
+    private List<Avaliacao> Avaliacoes = new List<Avaliacao>();
 
     private int DuracaoTotal = 0;
 
@@ -54,7 +54,7 @@ class Album
     {
         int maxLength = Musicas.Max(musica => musica.ResumoMusica.Length);
         string pad = string.Empty.PadLeft(maxLength, '-');
-        return $"\n{pad}\n\nAlbum: {Name}\nDuração Total: {getDuracaoTotal()}\n{AllMusicasToString()}\n{pad}\n";
+        return $"\n{pad}\n\nAlbum: {Name}\nDuração Total: {getDuracaoTotal()}\nNota = {MediaAvaliacoes}\n{AllMusicasToString()}\n{pad}\n";
     }
 
     private string AllMusicasToString()
@@ -65,8 +65,31 @@ class Album
 
     public override string ToString()
     {
-        string returnedString = $"Album: {Name}\nDuração Total: {getDuracaoTotal()}\nNúmero de Musicas: {Musicas.Count}";
+        string returnedString = $"Album: {Name}\nDuração Total: {getDuracaoTotal()}\nNota: {MediaAvaliacoes}\nNúmero de Musicas: {Musicas.Count}";
         string pad = string.Empty.PadLeft(returnedString.Length, '-');
         return $"{pad}\n{returnedString}\n{pad}\n";
+    }
+
+    public string getAvaliacao()
+    {
+        double media = MediaAvaliacoes;
+        if (media > 0)
+            return $"A avaliação do Album {Name} da banda {Artista} é: {MediaAvaliacoes}";
+        return $"O Album {Name} da banda {Artista} não possui avaliações";
+    }
+
+    public void Avaliar(Avaliacao nota)
+    {
+        Avaliacoes.Add(nota);
+    }
+
+    public double MediaAvaliacoes
+    {
+        get
+        {
+            if(Avaliacoes.Count == 0)
+                return 0;
+            return Avaliacoes.Average(avaliacao => avaliacao.Nota);
+        }
     }
 }

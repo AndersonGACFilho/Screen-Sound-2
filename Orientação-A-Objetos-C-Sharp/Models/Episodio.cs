@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ScreenSound.Models;
 
-class Episodio
+
+internal class Episodio
 {
     public string Titulo { get; }
     public string Resumo { get; }

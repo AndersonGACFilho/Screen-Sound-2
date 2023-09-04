@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ScreenSound.Models;
 
-class Musica
+
+internal class Musica
 {
     private string Nome { get; set; }
     private string Album { get; set; }
